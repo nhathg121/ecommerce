@@ -11,7 +11,7 @@ const CountryDropdown = () => {
           <span className="label">Your Location</span>
           <span className="name">Viet Nam</span>
         </div>
-        <span className="dropIcon mr-3">
+        <span className="dropIcon ">
           <FaAngleDown />
         </span>
       </Button>
