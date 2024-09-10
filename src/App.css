@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,00;1,100;1,300;1,400;1,700;1,900&display=swap");
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -33,7 +32,6 @@ body {
   width: 100%;
   height: auto;
 }
-
 .headerWrapper .header .part2 .countryDrop {
   width: 170px;
   height: 50px;
@@ -41,13 +39,14 @@ body {
   justify-content: start;
   border: 1px solid #0000001a !important;
   border-radius: 7px !important;
-  padding: 0px 20px  !important;
+  padding: 0px 20px !important;
 }
 .headerWrapper .header .part2 .countryDrop .label {
   font-size: 12px !important;
   text-transform: capitalize !important;
   color: rgba(102, 102, 102, 0.7) !important;
-  /* line-height: 30px; */
+  /* line-height: 30px;
+     */
   font-weight: 300;
 }
 .headerWrapper .header .part2 .countryDrop .name {
@@ -60,4 +59,58 @@ body {
 .headerWrapper .header .part2 .countryDrop span.dropIcon {
   opacity: 0.3;
   color: darkgray;
+}
+header .headerSearch {
+  width: 60%;
+  height: 60px;
+  position: relative;
+  background-color: #f3f4f797;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .headerSearch input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 10px 25px;
+}
+header .headerSearch input::placeholder {
+  color: rgb(131, 131, 131);
+  letter-spacing: 0.1em;
+}
+header .headerSearch input:focus {
+  outline: #0a3ed9;
+}
+header .headerSearch button {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 1.5em;
+  display: flex;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  z-index: 200;
+}
+header .part3 .circle {
+  align-items: center;
+  justify-content: center;
+  min-width: 45px !important;
+  height: 45px !important;
+  width: 45px !important;
+  border: 1px solid hsla(0, 0%, 59%, 0.098);
+  border-radius: 50% !important;
+}
+header .part3 .circle svg {
+  font-size: 1.5em;
 }
