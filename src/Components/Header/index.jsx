@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 
 import { IoSearch } from "react-icons/io5";
 import { LuUser2 } from "react-icons/lu";
+import { IoBagOutline } from "react-icons/io5";
 
 import CountryDropdown from "../CountryDropdown";
 
@@ -20,7 +21,7 @@ const Header = () => {
           </div>
         </div>
 
-        <header className="header">
+        <header className="header d-flex align-items-center">
           <div className="container">
             <div className="row align-items-center justify-content-center">
               <div className="logoWrapper col-sm-2">
@@ -39,10 +40,20 @@ const Header = () => {
                 </div>
                 {/* Header Search End Here*/}
                 <div className="part3 d-flex align-items-center ml-auto">
-                  <Button className="circle">
+                  <Button className="circle mr-3 ">
                     <LuUser2 />
-                    <p>$650</p>
                   </Button>
+                  <div className="ml-auto cartTab d-flex align-items-center">
+                    <span className="price">$650</span>
+                    <div className="position-relative ml-2">
+                      <Button className="circle ml-3">
+                        <IoBagOutline />
+                      </Button>
+                      <span className="count d-flex align-items-center justify-content-center ">
+                        1
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -13,6 +13,7 @@ body {
 .bg-black {
   background: #000000;
 }
+
 .headerWrapper .top-strip {
   padding: 8px 0px;
 }
@@ -25,12 +26,15 @@ body {
 }
 .headerWrapper .header {
   width: 100%;
-  height: auto;
+  height: 70px;
   padding: 15px 0px;
+  margin-top: 5px;
+  /* background-color: red; */
 }
 .logoWrapper img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
 }
 .headerWrapper .header .part2 .countryDrop {
   width: 170px;
@@ -78,7 +82,7 @@ header .headerSearch input {
   background-color: transparent;
   padding: 10px 25px;
 }
-header .headerSearch input::placeholder {
+header .headerSearch input::-webkit-input-placeholder {
   color: rgb(131, 131, 131);
   letter-spacing: 0.1em;
 }
@@ -102,15 +106,42 @@ header .headerSearch button {
   border-radius: 20px;
   z-index: 200;
 }
+
+header .headerSearch button svg {
+  font-size: 25px;
+}
+
 header .part3 .circle {
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
   align-items: center;
   justify-content: center;
-  min-width: 45px !important;
-  height: 45px !important;
-  width: 45px !important;
   border: 1px solid hsla(0, 0%, 59%, 0.098);
   border-radius: 50% !important;
+  color: #000000;
 }
 header .part3 .circle svg {
-  font-size: 1.5em;
+  font-size: 22px;
+}
+.cartTab .price {
+  font-style: 18px;
+}
+.cartTab button {
+  background: #fff !important;
+}
+.cartTab button svg {
+  color: red !important;
+}
+.cartTab .count {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background: red;
+  border-radius: 50%;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 700;
 }
