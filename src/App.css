@@ -27,13 +27,14 @@ body {
 .headerWrapper .header {
   width: 100%;
   height: 70px;
-  padding: 15px 0px;
+  padding: 25px 0px;
   margin-top: 5px;
+  /* background-color: #c31a1a; */
 }
 .logoWrapper img {
   width: 50%;
   height: 100%;
-  margin-left: 100px;
+  /* margin-left: 0px; */
 }
 .headerWrapper .header .part2 .countryDrop {
   width: 170px;
@@ -143,4 +144,20 @@ header .part3 .circle svg {
   color: #ffff;
   font-size: 12px;
   font-weight: 700;
+}
+
+nav .allCatTab {
+  background-color: #2bbef9;
+  padding: 8px 30px !important;
+  border-radius: 30px;
+}
+nav .allCatTab * {
+  color: #fff;
+}
+
+nav .allCatTab:hover {
+  background: #2bbef9;
+}
+nav .allCatTab .text {
+  font-weight: 600;
 }

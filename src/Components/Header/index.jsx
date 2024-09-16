@@ -13,6 +13,7 @@ const Header = () => {
   return (
     <div>
       <div className="headerWrapper">
+        {/*-----------------------------Notification----------------------------*/}
         <div className="top-strip bg-black">
           <div className="container">
             <p className=" lh-lg mb-0 mt-0 text-center ">
@@ -22,7 +23,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/*--------------------------------------header-----------------------------------------------------------------------------------------------------------*/}
+        {/*---------------------------------header-------------------------------*/}
         <header className="header d-flex align-items-center">
           <div className="container">
             <div className="row align-items-center justify-content-center">
@@ -38,7 +39,7 @@ const Header = () => {
                 <CountryDropdown />
                 <SearchBox />
 
-                {/* ------------RIGHT ITEMS ---------- */}
+                {/* ------------User Menu ---------- */}
                 <div className="part3  col-sm-2  d-flex align-items-center ml-auto">
                   <Button className="circle mr-3 ">
                     <LuUser2 />
@@ -59,6 +60,19 @@ const Header = () => {
             </div>
           </div>
         </header>
+        {/*---------------------------------Nav-------------------------------*/}
+        <nav>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-3 navPart1">
+                <Button className="allCatTab">
+                  <span>All Categories</span>
+                </Button>
+              </div>
+              <div className="col-sm-9 navPart2">123</div>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
   );
