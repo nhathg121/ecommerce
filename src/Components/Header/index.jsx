@@ -2,11 +2,12 @@ import Logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
-import { IoSearch } from "react-icons/io5";
 import { LuUser2 } from "react-icons/lu";
 import { IoBagOutline } from "react-icons/io5";
+// import { IoSearch } from "react-icons/io5";
 
 import CountryDropdown from "../CountryDropdown";
+import SearchBox from "./SearchBox/SearchBox";
 
 const Header = () => {
   return (
@@ -21,30 +22,29 @@ const Header = () => {
           </div>
         </div>
 
+        {/*--------------------------------------header-----------------------------------------------------------------------------------------------------------*/}
         <header className="header d-flex align-items-center">
           <div className="container">
             <div className="row align-items-center justify-content-center">
+              {/*   --------------LOGO  ------------- */}
               <div className="logoWrapper col-sm-2">
                 <Link to={"/"}>
                   <img src={Logo} alt="Golf Land Logo" />
                 </Link>
               </div>
+
+              {/*   ---CountryDropdown & SearchBox---- */}
               <div className="col-sm-10 d-flex align-items-center part2">
                 <CountryDropdown />
-                {/* Header Search Start Here*/}
-                <div className="headerSearch ml-3 mr-3">
-                  <input type="text" placeholder="Seacrh for product ..." />
-                  <Button>
-                    <IoSearch />
-                  </Button>
-                </div>
-                {/* Header Search End Here*/}
-                <div className="part3 d-flex align-items-center ml-auto">
+                <SearchBox />
+
+                {/* ------------RIGHT ITEMS ---------- */}
+                <div className="part3  col-sm-2  d-flex align-items-center ml-auto">
                   <Button className="circle mr-3 ">
                     <LuUser2 />
                   </Button>
                   <div className="ml-auto cartTab d-flex align-items-center">
-                    <span className="price">$650</span>
+                    <span className="price">$3.29</span>
                     <div className="position-relative ml-2">
                       <Button className="circle ml-3">
                         <IoBagOutline />
