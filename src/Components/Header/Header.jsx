@@ -6,8 +6,9 @@ import { LuUser2 } from "react-icons/lu";
 import { IoBagOutline } from "react-icons/io5";
 // import { IoSearch } from "react-icons/io5";
 
-import CountryDropdown from "../CountryDropdown";
+import CountryDropdown from "../CountryDropdown/CountryDropdown";
 import SearchBox from "./SearchBox/SearchBox";
+import Navigation from "./Navigation/Navigation";
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
         </div>
 
         {/*---------------------------------header-------------------------------*/}
-        <header className="header d-flex align-items-center">
+        <header className="header d-flex align-items-center ">
           <div className="container">
             <div className="row align-items-center justify-content-center">
               {/*   --------------LOGO  ------------- */}
@@ -61,18 +62,7 @@ const Header = () => {
           </div>
         </header>
         {/*---------------------------------Nav-------------------------------*/}
-        <nav>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-3 navPart1">
-                <Button className="allCatTab">
-                  <span>All Categories</span>
-                </Button>
-              </div>
-              <div className="col-sm-9 navPart2">123</div>
-            </div>
-          </div>
-        </nav>
+        <Navigation />
       </div>
     </div>
   );

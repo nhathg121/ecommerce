@@ -7,8 +7,14 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
-.container {
-  max-width: 90%;
+@media (min-width: 1170px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1300px;
+  }
 }
 .bg-black {
   background: #000000;
@@ -26,9 +32,8 @@ body {
 }
 .headerWrapper .header {
   width: 100%;
-  height: 70px;
+  height: auto;
   padding: 25px 0px;
-  margin-top: 5px;
   /* background-color: #c31a1a; */
 }
 .logoWrapper img {
@@ -68,7 +73,7 @@ header .headerSearch {
   width: 60%;
   height: 60px;
   position: relative;
-  background-color: #f3f4f797;
+  background-color: #e7e7e7;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -160,4 +165,16 @@ nav .allCatTab:hover {
 }
 nav .allCatTab .text {
   font-weight: 600;
+}
+
+.headerWrapper .navMenu {
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: red; */
+}
+.headerWrapper .navMenu li {
+  line-height: 100%;
+  padding: 8px 30px !important;
+  list-style-type: none;
 }
