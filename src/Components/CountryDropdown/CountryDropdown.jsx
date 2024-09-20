@@ -7,8 +7,8 @@ const CountryDropdown = () => {
     <>
       {" "}
       <Button className="countryDrop d-flex justify-content-between">
-        <div className="info d-flex flex-column align-items-start">
-          <span className="label">Your Location</span>
+        <div className="info d-flex flex-column align-items-start ">
+          <span className="label ">Your Location</span>
           <span className="name">Viet Nam</span>
         </div>
         <span className="dropIcon ">
